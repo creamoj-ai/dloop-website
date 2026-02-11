@@ -184,8 +184,14 @@ export default function Registrati() {
                   </Button>
 
                   <p className="text-[11px] text-text-muted text-center leading-relaxed">
-                    Registrandoti, accetti i nostri Termini di Servizio e la
-                    Privacy Policy.
+                    Registrandoti, accetti i nostri{" "}
+                    <a href="/terms" className="text-text-secondary hover:text-white underline">
+                      Termini di Servizio
+                    </a>{" "}
+                    e la{" "}
+                    <a href="/privacy" className="text-text-secondary hover:text-white underline">
+                      Privacy Policy
+                    </a>.
                   </p>
                 </form>
               )}

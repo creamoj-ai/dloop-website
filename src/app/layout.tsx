@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
+import IubendaScripts from "@/components/IubendaScripts";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -47,7 +48,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it" className={inter.variable}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <IubendaScripts />
+      </body>
     </html>
   );
 }

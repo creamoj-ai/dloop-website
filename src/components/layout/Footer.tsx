@@ -43,13 +43,19 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5">
               <li>
-                <span className="text-sm text-text-muted">Privacy Policy</span>
+                <a href="/privacy" className="text-sm text-text-secondary hover:text-white transition-colors">
+                  Privacy Policy
+                </a>
               </li>
               <li>
-                <span className="text-sm text-text-muted">Termini di Servizio</span>
+                <a href="/terms" className="text-sm text-text-secondary hover:text-white transition-colors">
+                  Termini di Servizio
+                </a>
               </li>
               <li>
-                <span className="text-sm text-text-muted">Cookie Policy</span>
+                <a href="/cookie-policy" className="text-sm text-text-secondary hover:text-white transition-colors">
+                  Cookie Policy
+                </a>
               </li>
             </ul>
           </div>
