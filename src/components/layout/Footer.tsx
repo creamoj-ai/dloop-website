@@ -12,8 +12,8 @@ export default function Footer() {
               <span className="text-white">loop</span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed">
-              La prima piattaforma di delivery costruita dai rider, per i rider.
-              Un nuovo modello. Una nuova era.
+              L&apos;app per le consegne fatta dai rider, per i rider.
+              Un nuovo modo di lavorare. Una nuova era.
             </p>
           </div>
 

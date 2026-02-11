@@ -39,7 +39,16 @@ export default function Testimonianze() {
                     <p className="text-sm font-semibold text-white">
                       {t.name}
                     </p>
-                    <p className="text-xs text-text-secondary">{t.role}</p>
+                    <p className="text-xs text-text-secondary">
+                      {t.role.startsWith("Dlooper") ? (
+                        <>
+                          <span className="text-primary font-semibold">Dlooper</span>
+                          {t.role.slice(7)}
+                        </>
+                      ) : (
+                        t.role
+                      )}
+                    </p>
                   </div>
                 </div>
 

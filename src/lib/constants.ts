@@ -3,23 +3,23 @@ import type { Testimonial, Feature, Step } from "./types";
 export const STEPS: Step[] = [
   {
     number: 1,
-    title: "Registrati in 2 minuti",
+    title: "Lascia i tuoi dati",
     description:
-      "Compila il form con i tuoi dati. Nessun documento richiesto subito.",
+      "Compila il modulo qui sotto. Ci vogliono 2 minuti, nessun documento richiesto.",
     icon: "UserPlus",
   },
   {
     number: 2,
-    title: "Scarica l'app dloop",
+    title: "Scarica l'app",
     description:
-      "Ricevi il link per scaricare l'app e configura il tuo profilo rider.",
+      "Ti mandiamo il link per scaricare dloop. Crei il tuo profilo e sei pronto.",
     icon: "Smartphone",
   },
   {
     number: 3,
     title: "Inizia a guadagnare",
     description:
-      "Scegli la tua zona, accetta ordini e guadagna subito. Tu decidi quando.",
+      "Scegli la tua zona, accetta gli ordini e guadagna. Decidi tu quando e quanto lavorare.",
     icon: "Banknote",
   },
 ];
@@ -27,49 +27,49 @@ export const STEPS: Step[] = [
 export const FEATURES: Feature[] = [
   {
     icon: "MapPin",
-    title: "Zone Calde Live",
+    title: "Vedi dove c'e' lavoro",
     description:
-      "Nessun'altra app lo fa. Mappa in tempo reale della domanda: vai dove servono rider, non dove ti mandano altri.",
+      "Una mappa ti mostra in tempo reale dove ci sono piu' ordini. Vai dove serve, senza perdere tempo.",
     colorClass: "text-urgent",
     bgClass: "bg-urgent/15",
   },
   {
     icon: "TrendingUp",
-    title: "Zero Sorprese",
+    title: "Sai quanto guadagni prima",
     description:
-      "Sai esattamente quanto guadagni prima di accettare. Ogni centesimo visibile, ogni commissione chiara.",
+      "Prima di accettare un ordine, vedi gia' quanto ti porta. Nessuna sorpresa, tutto chiaro.",
     colorClass: "text-earnings",
     bgClass: "bg-earnings/15",
   },
   {
     icon: "Route",
-    title: "Percorso Smart",
+    title: "Percorsi piu' veloci",
     description:
-      "L'algoritmo lavora per te, non contro di te. Piu' ordini, meno km, massimo guadagno orario.",
+      "L'app ti suggerisce la strada migliore. Meno chilometri, piu' consegne, piu' soldi in tasca.",
     colorClass: "text-route",
     bgClass: "bg-route/15",
   },
   {
     icon: "Trophy",
-    title: "Cresci con Noi",
+    title: "Vieni premiato",
     description:
-      "Streak, livelli, badge: non sei un numero, sei un professionista che viene premiato. Piu' dai, piu' ricevi.",
+      "Piu' lavori, piu' sali di livello e sblocchi vantaggi. Non sei un numero, sei un professionista.",
     colorClass: "text-bonus",
     bgClass: "bg-bonus/15",
   },
   {
     icon: "Wallet",
-    title: "Tre Fonti di Guadagno",
+    title: "Guadagni anche senza consegnare",
     description:
-      "Non solo consegne. Guadagna anche dalla rete referral e dal marketplace. Un modello che non esiste altrove.",
+      "Costruisci la tua rete di clienti e negozianti, apri il tuo negozio. Tre entrate diverse da un'unica app.",
     colorClass: "text-stats",
     bgClass: "bg-stats/15",
   },
   {
     icon: "Shield",
-    title: "Supporto Reale",
+    title: "Assistenza vera + AI",
     description:
-      "Niente bot. Chat diretta con persone vere, dall'app, in tempo reale. Quando serve, ci siamo.",
+      "Hai un problema? Ti risponde una persona vera. E la nostra AI ti aiuta a gestire ordini, clienti e il tuo negozio senza fatica.",
     colorClass: "text-primary",
     bgClass: "bg-primary/15",
   },
@@ -78,30 +78,30 @@ export const FEATURES: Feature[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Marco R.",
-    role: "Rider dal 2025",
+    role: "Dlooper — Consegne",
     image: "/images/rider-1.jpg",
     quote:
-      "Ho lavorato con tre piattaforme diverse. dloop e' l'unica dove so esattamente quanto guadagno prima di accettare. Non torno indietro.",
+      "Ho lavorato con tre app diverse. dloop e' l'unica dove so quanto guadagno prima di accettare un ordine. Non torno piu' indietro.",
     rating: 5,
     earnings: "\u20AC1.400/mese",
   },
   {
     name: "Sofia L.",
-    role: "Rider dal 2025",
+    role: "Dlooper — La mia rete",
     image: "/images/rider-2.jpg",
     quote:
-      "Per la prima volta mi sento trattata come una professionista, non come un numero. La mappa delle zone calde ha cambiato il mio modo di lavorare.",
+      "Ho portato dentro dloop tre negozi e una decina di clienti. Ogni volta che ordinano, io guadagno una parte. Anche quando non sto consegnando, i soldi arrivano.",
     rating: 5,
-    earnings: "\u20AC1.100/mese",
+    earnings: "\u20AC1.800/mese",
   },
   {
     name: "Antonio P.",
-    role: "Rider dal 2026",
+    role: "Dlooper — Il mio negozio",
     image: "/images/rider-3.jpg",
     quote:
-      "Guadagno dalle consegne, dai referral e dal marketplace. Tre fonti di reddito da un'unica app. Questo prima non esisteva.",
+      "Ho aperto il mio negozio dentro l'app. I miei clienti ordinano anche su WhatsApp e io gestisco tutto da dloop. Consegne, la mia rete e il mio negozio: tre entrate, un'unica app.",
     rating: 4,
-    earnings: "\u20AC900/mese",
+    earnings: "\u20AC1.200/mese",
   },
 ];
 
@@ -130,8 +130,8 @@ export const NAPLES_ZONES = [
 
 export const NAV_LINKS = [
   { label: "Come Funziona", href: "#come-funziona" },
+  { label: "3 Modi", href: "#tre-modi" },
   { label: "Guadagni", href: "#guadagni" },
   { label: "Zone", href: "#zone" },
-  { label: "Features", href: "#features" },
   { label: "Testimonianze", href: "#testimonianze" },
 ];

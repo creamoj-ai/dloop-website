@@ -35,7 +35,7 @@ export default function Hero() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-[32px] md:text-5xl lg:text-[48px] font-bold leading-[1.1] mb-5"
             >
-              Le regole del delivery
+              Le consegne come le conosci
               <br />
               stanno per{" "}
               <span className="text-primary">cambiare</span>.
@@ -50,8 +50,8 @@ export default function Hero() {
             >
               L&apos;app che i rider aspettavano non esisteva. Fino ad ora.
               <br />
-              <span className="text-white font-medium">dloop</span> e&apos; la prima piattaforma costruita dai rider, per i rider.
-              Niente algoritmi nascosti. Niente sorprese. Solo trasparenza totale.
+              Con <span className="text-white font-medium">dloop</span> consegni, ti costruisci
+              il tuo giro di clienti e apri il tuo negozio. Guadagni anche quando non lavori.
             </motion.p>
 
             {/* Buttons */}
@@ -68,7 +68,7 @@ export default function Hero() {
               </a>
               <a href="#come-funziona">
                 <Button variant="secondary" size="lg">
-                  Scopri la rivoluzione
+                  Come funziona
                 </Button>
               </a>
             </motion.div>

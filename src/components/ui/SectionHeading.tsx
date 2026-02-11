@@ -1,7 +1,8 @@
+import type { ReactNode } from "react";
 import ScrollReveal from "./ScrollReveal";
 
 interface SectionHeadingProps {
-  title: string;
+  title: ReactNode;
   subtitle?: string;
   align?: "left" | "center";
 }

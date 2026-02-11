@@ -54,7 +54,7 @@ export default function Registrati() {
     <section id="registrati" className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <SectionHeading
-          title="Il futuro del delivery inizia qui"
+          title="Il momento di cambiare e' adesso"
           subtitle="Sii tra i primi. Entra in dloop."
         />
 
@@ -63,12 +63,12 @@ export default function Registrati() {
           <ScrollReveal>
             <div className="space-y-5">
               {[
-                "Tre fonti di guadagno, non solo consegne",
-                "Sai quanto guadagni prima di accettare",
+                "Consegni, costruisci la tua rete e apri il tuo negozio",
+                "Guadagni anche quando non stai lavorando",
                 "Tu decidi quando, dove e come lavorare",
-                "Mappa live della domanda reale",
-                "Supporto umano, non bot",
-                "Cresci di livello e vieni premiato",
+                "Vedi sulla mappa dove ci sono piu' ordini",
+                "I tuoi clienti ordinano anche via WhatsApp",
+                "Piu' lavori, piu' sali di livello e vieni premiato",
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full bg-earnings/15 flex items-center justify-center shrink-0">
@@ -87,7 +87,7 @@ export default function Registrati() {
                     Zero costi, zero vincoli.
                   </span>{" "}
                   Entra gratis, esci quando vuoi. Ma chi entra adesso sara&apos; tra i
-                  pionieri di un nuovo modello di delivery.
+                  primi a lavorare in un modo completamente nuovo.
                 </p>
               </div>
             </div>
