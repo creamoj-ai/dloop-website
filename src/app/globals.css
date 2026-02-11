@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ============================================
+   dloop Design Tokens (from Flutter tokens.dart)
+   ============================================ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-background: #0D0D0F;
+  --color-background-gradient: #121214;
+  --color-surface: #1A1A1E;
+  --color-surface-variant: #252529;
+  --color-primary: #FF6B00;
+  --color-primary-hover: #FF8533;
+  --color-earnings: #00C853;
+  --color-bonus: #AA00FF;
+  --color-route: #3DA0FF;
+  --color-stats: #FFD54F;
+  --color-urgent: #FF1744;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #9E9E9E;
+  --color-text-muted: #6B6B6B;
+  --color-border: #2A2A2E;
+  --color-border-light: #3A3A3E;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Font */
+  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+
+  /* Animations */
+  --animate-fade-in: fade-in 0.6s ease-out;
+  --animate-slide-up: slide-up 0.6s ease-out;
+  --animate-glow-pulse: glow-pulse 2s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 0, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(255, 107, 0, 0.4); }
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #121214 0%, #0D0D0F 100%);
+  background-attachment: fixed;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: rgba(255, 107, 0, 0.3);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #252529;
+  border-radius: 9999px;
+}
+
+/* ============================================
+   Leaflet Overrides
+   ============================================ */
+.leaflet-container {
+  background: #0D0D0F !important;
+}
+.leaflet-control-attribution {
+  background: rgba(26, 26, 30, 0.9) !important;
+  color: #9E9E9E !important;
+  font-size: 10px !important;
+}
+.leaflet-control-attribution a {
+  color: #9E9E9E !important;
 }
