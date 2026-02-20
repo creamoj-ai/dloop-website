@@ -7,6 +7,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import { NAPLES_ZONES } from "@/lib/constants";
+import { supabase } from "@/lib/supabase";
 
 export default function Registrati() {
   const [form, setForm] = useState({
@@ -30,15 +31,16 @@ export default function Registrati() {
 
     setLoading(true);
     try {
-      const res = await fetch("/api/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      const data = await res.json();
+      const { error: dbError } = await supabase
+        .from("website_signups")
+        .insert({ ...form, source: "landing_page" });
 
-      if (!res.ok) {
-        setError(data.error || "Errore durante la registrazione");
+      if (dbError) {
+        if (dbError.code === "23505") {
+          setError("Questa email e' gia' registrata");
+        } else {
+          setError("Errore durante la registrazione");
+        }
         return;
       }
 

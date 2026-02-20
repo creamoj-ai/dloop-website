@@ -56,12 +56,6 @@ export default function ZoneAttive() {
 
   useEffect(() => {
     setMounted(true);
-    fetch("/api/zones")
-      .then((r) => r.json())
-      .then((data) => {
-        if (Array.isArray(data) && data.length > 0) setZones(data);
-      })
-      .catch(() => {});
   }, []);
 
   return (
